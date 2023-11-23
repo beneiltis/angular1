@@ -12,7 +12,10 @@ k8sSettings:
   deploymentStrategy: recreate
   imagePullPolicy: Always
   probesOn: false
-envVars: []
+envVars:
+  - name: test
+    value: test
+    type: PLAINTEXT
 ports:
   - portType: HTTPS
     internalPort: 8080
