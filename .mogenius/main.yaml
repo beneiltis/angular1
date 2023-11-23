@@ -14,7 +14,7 @@ k8sSettings:
   probesOn: false
 envVars:
   - name: test
-    value: test
+    value: test1
     type: PLAINTEXT
 ports:
   - portType: HTTPS
