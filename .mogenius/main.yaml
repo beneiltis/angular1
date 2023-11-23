@@ -10,7 +10,7 @@ k8sSettings:
   ephemeralStorageMB: 50
   replicaCount: 1
   deploymentStrategy: recreate
-  imagePullPolicy: Never
+  imagePullPolicy: IfNotPresent
   probesOn: false
 envVars:
   - name: test
