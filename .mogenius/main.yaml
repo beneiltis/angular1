@@ -9,7 +9,7 @@ k8sSettings:
   limitMemoryMB: 255
   ephemeralStorageMB: 50
   replicaCount: 1
-  deploymentStrategy: recreate
+  deploymentStrategy: rolling
   imagePullPolicy: Always
   probesOn: false
 envVars:
