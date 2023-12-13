@@ -17,6 +17,6 @@ ports:
   - portType: HTTPS
     internalPort: 8080
     externalPort: 80
-    expose: false
+    expose: true
 app: null
 
