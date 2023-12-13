@@ -5,17 +5,14 @@ gitBranch: main
 dockerfileName: Dockerfile
 dockerContext: .
 k8sSettings:
-  limitCpuCores: 0.5
-  limitMemoryMB: 255
+  limitCpuCores: 0.3
+  limitMemoryMB: 32
   ephemeralStorageMB: 50
   replicaCount: 1
   deploymentStrategy: recreate
   imagePullPolicy: IfNotPresent
   probesOn: false
-envVars:
-  - name: test
-    value: test1
-    type: PLAINTEXT
+envVars: []
 ports:
   - portType: HTTPS
     internalPort: 8080
