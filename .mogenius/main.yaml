@@ -15,7 +15,7 @@ k8sSettings:
 envVars: []
 ports:
   - portType: HTTPS
-    internalPort: 3000
+    internalPort: 8080
     externalPort: 80
     expose: true
 app: null
