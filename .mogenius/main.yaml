@@ -12,9 +12,7 @@ k8sSettings:
   deploymentStrategy: recreate
   imagePullPolicy: IfNotPresent
   probesOn: false
-envVars:
-  - name: byfunnysecret
-    type: KEY_VAULT
+envVars: []
 ports:
   - portType: HTTPS
     internalPort: 8080
