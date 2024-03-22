@@ -3,7 +3,6 @@
 
 
 
-
 # Angular template
 This is a template to run Angular on [mogenius](https://mogenius.com). We use it to deploy Angular from our service library. If you have an Angular project that you want to run on mogenius feel free to add this template to your project.
 ## Deployment on mogenius
