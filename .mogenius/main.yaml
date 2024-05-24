@@ -1,22 +1,22 @@
-serviceType: GIT_REPOSITORY
-displayName: angular1
-gitRepository: https://github.com/beneiltis/angular1.git
-gitBranch: main
+serviceType: Deployment
+displayName: angular
 dockerfileName: Dockerfile
 dockerContext: .
 k8sSettings:
-  limitCpuCores: 0.3
-  limitMemoryMB: 32
+  limitCpuCores: 0.4
+  limitMemoryMB: 22
   ephemeralStorageMB: 50
   replicaCount: 1
   deploymentStrategy: recreate
   imagePullPolicy: IfNotPresent
   probesOn: false
-envVars: []
+envVars:
+  - name: asdasd
+    value: asdasd
+    type: PLAINTEXT
 ports:
   - portType: HTTPS
     internalPort: 8080
     externalPort: 80
     expose: true
-app: null
 
