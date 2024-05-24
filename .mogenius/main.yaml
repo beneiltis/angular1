@@ -1,5 +1,5 @@
 serviceType: Deployment
-displayName: angular
+displayName: angu
 dockerfileName: Dockerfile
 dockerContext: .
 k8sSettings:
