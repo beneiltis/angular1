@@ -53,15 +53,3 @@ jobs:
             ${{ vars.MO_IMAGE_NAME__MAIN }}:latest
           build-args: |
             VERSION=${{ env.VERSION }}
-      - id: releaseWithMogenius-6bf1d71a79f1469aac0f
-        name: Release with mogenius
-        uses: mogenius/mogenius-release-action@v1
-        with:
-          dev: true
-          image: ${{ vars.MO_IMAGE_NAME__MAIN }}:${{ env.VERSION }}
-          kind: Deployment
-          namespace: nginx
-          resourceName: angular1
-          containerName: angular1
-          keyKind: ${{ vars.MO_API_KIND__MAIN }}
-          token: ${{ secrets.MO_API_TOKEN__6bf1d71a79f1469aac0f__MAIN }}
